@@ -1,0 +1,30 @@
+//js object
+
+var carInfo = {make:"toyota",year:1990,model:"camry"};
+
+carInfo // will return all info in array above
+carInfo["make"] // will return "toyota"
+
+var myNewO = {a:"hello",b:[1,2,3],c:{inside:['a','b']}};
+myNewO["a"] // hello
+
+myNewO["b"][1] // 2
+
+myNewO["c"]["inside"][1] // b
+
+
+//change car year
+carInfo['year'] = 2006; //or carInfo['year'] = +=1
+
+console.dir(carInfo);
+//make: 'toyota'
+//model:  'camry'
+//year: 2006
+
+//for in loop
+for (key in carInfo) {
+  console.log(key);
+}
+//make
+//model
+//year

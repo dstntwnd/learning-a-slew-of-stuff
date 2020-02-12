@@ -1,0 +1,30 @@
+/* FUNCTIONS - code that you want to run over and over again
+with different uses. */
+
+function calculateAge(birthYear) {
+  return 2018 - birthYear;
+}
+
+var ageJohn = calculateAge(1990);
+var ageJane = calculateAge(1997);
+var ageJake = calculateAge(1970);
+var ageMike = calculateAge(1968);
+console.log(ageJohn, ageJake, ageJane, ageMike);
+
+
+//retirement year
+function retirement(birthYear, firstName) {
+  var age = calculateAge(birthYear);
+  var retireAt = 55 - age;
+
+if (retirement > 0 ) {
+  console.log(firstName + ' retires in ' + retirement +
+  ' years.');
+}else {
+  console.log(firstName + ' is already retired.');
+}
+
+Retirement(1990, 'John');
+Retirement(1997, 'Jane');
+Retirement(1970, 'Jake');
+Retirement(1968, 'Mike');

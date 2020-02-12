@@ -1,0 +1,30 @@
+var x = 0
+while (x < 5){
+  console.log("x is currently: "+x);
+  console.log("x is still less than 5, adding 1 to x");
+
+  x = x+1;
+}
+// this code (loop) will continue counting until the loops reaches 5
+
+var x = 0
+while (x < 5){
+  console.log("x is currently: "+x);
+
+  if (x===3) {
+    console.log("x is equal to 3");
+    break;
+  }  // this allows the loop to stop at 3 rather than continuing through the whole loop cycle.
+
+  console.log("x is still less than 5, adding 1 to x");
+
+  x = x+1;
+}
+
+// make a while loop that counts only the even numbers from 1 -10
+var num = 1
+while (num < 11) {
+  if (num%2 === 0) {
+    console.log(num);
+  }
+  num = num+1;

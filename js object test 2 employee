@@ -1,0 +1,36 @@
+//js object test
+
+var employee = {
+  name: 'john smith',
+  job: ' programmer',
+  age: 31
+}
+
+//write a method that will show the length of the employee name in the console.
+nameLength: function() {
+  console.log(this.name.length);
+}
+
+//write a program that will create an alert in the browser of each
+//of the objects values for the key value pairs.  example, it should
+//alert: My name is John Smith, Job is Programmer, Age is 31
+var employee = {
+  name: 'john smith',
+  job: ' programmer',
+  age: 31,
+  report:function() {
+    alert("name is"+this.name+", job is: "+this.job+", age is: "+this.age")
+  }
+}
+
+
+//add a method called lastName that prints the last name to the console.
+var employee = {
+  name: 'john smith',
+  job: ' programmer',
+  age: 31,
+  lastName:function() {
+    console.log(this.name.split('')[1]); //your calling the name, splitting
+    //the name into 2, then call the number that it falls on in the array.
+  }
+}

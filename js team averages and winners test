@@ -1,0 +1,22 @@
+//TEST
+/* John and mike both play basketbal in different teams.
+In the latest 3 games, johns team scored 89, 120 and 103
+points, while mikes team scored 116, 94 and 123 points.
+
+1.  Calculate the average score for each teams
+2. Decide which team wins in average (highest average score),
+and print the winner to the console.  also include the
+average score in the output.
+3. Dont forget to take into account that there
+might be a draw. */
+
+var john = (89 + 120 + 103) / 3;
+var mike = (116 + 94 + 123) / 3;
+
+if (john > mike) {
+  console.log('johns team wins in average score ' + john);
+}else if (mike > john) {
+  console.log('mikes team wins in average score ' + mike);
+}else {
+  console.log('the average scored for both teams were tied ' + john || mike);
+}

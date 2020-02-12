@@ -1,0 +1,64 @@
+// for - loops through a number of times
+// for/in - loops thorugh a js object
+// for/of - used with arrays
+
+// for (var statement1;statement2;statement3)
+for (var i = 0;i < 5;i++)
+
+// i++ is the same as i = i+1)
+for (var i = 0; i < 5; i++) {
+  console.log("number is "+i);
+}
+
+// another example
+
+var = "abcdefghijk"
+for (var i = 0; i < word.length; i++) {
+  console.log(word[i]);
+}
+
+// another example, skip every other letter
+// i=i+2 to skip every other letter
+
+var word = "ababababab"
+for (var i = 0; i < word.length; i=i+2) {
+  console.log(word[i]);
+}
+
+// TEST PORTION
+// print the console.log("hello"); out 5 times
+
+var x = 0;
+
+while (x<5) {
+  console.log("hello");
+  x++
+}
+
+// same with for loops
+
+for (var i = 0; i < 5; i++) {
+  console.log("hello");
+}
+
+
+// odd number 1-25
+
+var num = 1;
+
+while (num<25) {
+  if (num%2 !== 0) {
+    console.log(num);
+  }
+  num++
+}
+
+// same with for loops
+
+var num = 1;
+
+for (var i = 0; i < 25; i++) {
+  if (i%2 !== 0) {
+    console.log(i);
+  }
+}

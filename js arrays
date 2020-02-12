@@ -1,0 +1,68 @@
+//arrays
+//these allow you to store various basic data types in a sequence,
+//so we can  later access them as needed.
+
+var country1 = "usa"
+var country2 = "germany"
+var country3 = "china"
+//or use an array like this
+var countries = ["usa","germany","china"]
+
+countries[0] //will return usa
+countries[1] //will return germany
+countries[2] //will return china
+
+//immutable - strings are immutable, they cannot be changed outside of the string.
+countries[2] = "canada" //if the original countries is in a string (without brackets
+//it will not change and will continue to show up as germany)
+//mutable - able to be changed outside the arrays
+countries[2] = "canada" //country[2] will now be changed from germany to canada.
+
+//mixed data types
+var mixed = [true,20,"string"] //array, boolean, string, a mixed data type can
+//intake anything.
+mixed.length //will show up as 3 because of the 3 items in the mixed array.
+
+
+var myArr = ['one','two','three']
+var lastItem = myArr.pop() //now if you check the lastItem it will return "three"
+//myArr will now show ['one','two'] because the 'three' popped out.
+
+//add an item to the end of the array
+myArr.push("new_item") // this will push an item into the end of the array.
+
+//nested arrays, arrays inside arrays
+var matrix = [[1,2,3],[4,5,6],[7,8,9]] // doesnt need to be matrix, thats just a name.
+matrix.length // will show up as 3, but each one has 3 inside of it as well.
+
+//print a b and c
+var arr = ["a","b","c"]
+for (var i = 0; i < arr.length; i++) { //this reads like this: "i = 0" i starts
+//at 0, and "i<arr.length" while i is less than the length of the array, "i++"
+//keep adding 1
+    console.log(arr[i]);
+}
+//or us the FOR OF LOOP
+for (letter of arr){
+  console.log(letter); //you can replace letter in the parenthesis with anything
+  //if you type hello in there "hello" will show up 3 times in place of a b and c.
+}
+
+//alert user of every letter in that arrays
+for (letter of arr){
+  alert(letter);
+}
+//or
+arr.forEach(alert);
+//both of those will create a pop up box for each letter 3 boxes.
+
+function addAwesome(name){
+  console.log(name+ "is awesome");
+}
+
+var topics = ["python","django","science"]
+topics.forEach(addAwesome)
+//will return:
+//python is awesome
+//django is awesome
+//science is awesome

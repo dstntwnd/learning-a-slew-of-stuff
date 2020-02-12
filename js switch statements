@@ -1,0 +1,51 @@
+var john = '17';
+
+if (john < 12) {
+  console.log('john is a child');
+}else if (john > 13 && john < 18) {
+  console.log('john is a teenager');
+}else if (john > 18 && john < 60) {
+  console.log('john is an adult');
+}else {
+  console.log('john is elderly');
+}
+
+
+
+//ternary operator
+
+var john = '16'
+
+age>= 18 ? console.log(john + ' drinks beer.')
+: console.log(firstName + ' drinks juice');
+
+var drink = age >= 18 ? 'beer' : 'juice';
+console.log(drink);
+
+//same as above with an else if statement
+
+if (age >= 18) {
+  var drink = 'beer';
+}else {
+  var drink = 'juice';
+}
+
+
+
+//switch statement
+
+var job = 'teacher';
+
+switch (job) {
+  case teacher:
+      console.log(firstName + ' teaches kids');
+    break;
+  case driver:
+      console.log(firstName + ' drives people around');
+      break;
+  case social worker:
+      console.log(firstName = ' helps people');
+        break;
+  default:
+      console.log(firstName + ' does something else');
+}

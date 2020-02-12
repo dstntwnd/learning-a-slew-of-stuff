@@ -1,0 +1,86 @@
+//test problems
+
+function sleepIn(weekday, vacation) {
+  return (!weekday || vacation)
+}
+
+function monkeyTrouble(aSmile, bSmile) {
+  while (aSmile && bSmile) {
+    return (true)
+  }else if (!aSmile || bSmile) {
+    return (true)
+  }else {
+    return (false)
+  }
+}
+//or do it this way
+function monkeyTrouble(aSmile, bSmile) {
+  return (aSmile && bSmile || (!aSmile && !bSmile)
+}
+
+//return a string times a number of times
+//stringTimes("Hi", 2)
+function StringTimes(str, n) {
+  var returnStr = "";
+  var i =0;
+  while (i<n) {
+    returnStr += str
+    i++
+  }
+  return returnStr
+}
+
+//input and output
+//SumOf(1, 2, 3) but if number is 13 is doesnt count toward the sum
+function SumOf(a, b, c) {
+  if (a == 13) {
+    return 0
+  }
+  if (b == 13) {
+    return a+b
+ }
+  return a+b+c
+}
+
+//same code with if and if else
+function SumOf(a, b, c) {
+  if (a === 13) {
+    return 0
+  }else if (b === 13) {
+    return a
+  }else if (c === 13) {
+    return a + b
+  }else {
+    return a+b+c
+  }
+}
+
+//ticket price
+//0=no ticket, 1=small ticket, 2=big ticket
+//if speed is 60 or less, the result is 0.  if speed is between 61 and 80
+//the result is 1.  if speed is 81 or more, the result is 2.
+//unless its your bday, then your speed can be 5 highter in all cases.
+
+//speeding(60, false) -> 0
+//speeding(65, false) -> 1
+//speeding(65, true) -> 0
+function speeding(speed, birthday) {
+  if (birthday) {
+    speed -= 5
+  }
+  if (speed <= 60) {
+    return 0
+  }
+  if (60 < speed <= 80) {
+    return 1
+  }
+  return 2
+}
+
+//we want to make a row of bricks that is goal inches long.
+//we have a number of small bricks (1 inch each) and big bricks
+//(5 inches each).  return true if it is possible to make the goal
+//by choosing from the given bricks.
+function makeBricks(smass, big, goal) {
+  return goal%5 >= 0 && goal%5 - small <= 0 && small + 5*big >= goal;
+}

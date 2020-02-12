@@ -1,0 +1,30 @@
+/* function statements and expressions */
+
+//FUNCTION DECLARATION
+function whatDoYouDo(job, firstName) {
+
+}
+
+//FUNCTION EXPRESSION
+
+//  this is the format you will call on at the end
+var whatDoYouDo = function(job, firstName) {
+  //this is the code for the format, defining the functions
+  //case is the job and the return is the format of your sentence or statement.
+  switch (job) {
+    case 'teacher':
+      return firstName + ' teaches kids';
+    case 'driver':
+      return firstName + ' drives stuff places';
+    case 'social worker':
+      return firstName + ' helps people';
+    default:
+      return firstName + ' does something else.';
+  }
+}
+
+/* from here, call on whatDoYouDo and us parenthesis around
+the functions */
+console.log(whatDoYouDo('teacher', 'john'));
+console.log(whatDoYouDo('social worker', 'jane'));
+console.log(whatDoYouDo('driver', 'mike'));
